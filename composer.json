@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/realtime-presence-cluster",
+    "description": "High-throughput presence tracking and broadcast engine maintaining active user heartbeats, channels, and connection states.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\PresencePulse\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\PresencePulse\\PackageServiceProvider"
+            ]
+        }
+    }
+}
